@@ -1,0 +1,4 @@
+D:\Githome\csharp_homework\week03\Demo_score\Demo_score\bin\Debug\Demo_score.exe
+D:\Githome\csharp_homework\week03\Demo_score\Demo_score\bin\Debug\Demo_score.pdb
+D:\Githome\csharp_homework\week03\Demo_score\Demo_score\obj\x86\Debug\Demo_score.exe
+D:\Githome\csharp_homework\week03\Demo_score\Demo_score\obj\x86\Debug\Demo_score.pdb
