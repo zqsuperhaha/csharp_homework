@@ -1,0 +1,4 @@
+D:\Githome\csharp_homework\week03\Demo_enum\Demo_enum\bin\Debug\Demo_enum.exe
+D:\Githome\csharp_homework\week03\Demo_enum\Demo_enum\bin\Debug\Demo_enum.pdb
+D:\Githome\csharp_homework\week03\Demo_enum\Demo_enum\obj\x86\Debug\Demo_enum.exe
+D:\Githome\csharp_homework\week03\Demo_enum\Demo_enum\obj\x86\Debug\Demo_enum.pdb

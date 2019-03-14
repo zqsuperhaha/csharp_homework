@@ -1,0 +1,4 @@
+D:\Githome\csharp_homework\week03\DataType\DataType\bin\Debug\DataType.exe
+D:\Githome\csharp_homework\week03\DataType\DataType\bin\Debug\DataType.pdb
+D:\Githome\csharp_homework\week03\DataType\DataType\obj\x86\Debug\DataType.exe
+D:\Githome\csharp_homework\week03\DataType\DataType\obj\x86\Debug\DataType.pdb
