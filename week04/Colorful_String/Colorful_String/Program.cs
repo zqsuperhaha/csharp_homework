@@ -10,7 +10,13 @@ namespace Colorful_String
     {
         static void Main(string[] args)
         {
-            //1.
+            // 字符串 操作
+            string str = "我喜欢吃冰淇淋";
+            Console.WriteLine(str);
+            // 1.增
+            string s1 = str.Insert(4,"超级大的");
+            Console.WriteLine(s1);
+
         }
     }
 }
