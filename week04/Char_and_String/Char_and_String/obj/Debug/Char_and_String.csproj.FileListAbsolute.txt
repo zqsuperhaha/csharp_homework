@@ -1,6 +1,0 @@
-Z:\csharp_homework\week04\Char_and_String\Char_and_String\bin\Debug\Char_and_String.exe.config
-Z:\csharp_homework\week04\Char_and_String\Char_and_String\bin\Debug\Char_and_String.exe
-Z:\csharp_homework\week04\Char_and_String\Char_and_String\bin\Debug\Char_and_String.pdb
-Z:\csharp_homework\week04\Char_and_String\Char_and_String\obj\Debug\Char_and_String.csprojResolveAssemblyReference.cache
-Z:\csharp_homework\week04\Char_and_String\Char_and_String\obj\Debug\Char_and_String.exe
-Z:\csharp_homework\week04\Char_and_String\Char_and_String\obj\Debug\Char_and_String.pdb
