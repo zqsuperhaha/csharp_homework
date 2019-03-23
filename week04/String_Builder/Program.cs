@@ -28,7 +28,7 @@ namespace String_Builder
             }
             endTime = DateTime.Now.Millisecond;
             time = endTime - startTime;
-            Console.WriteLine("stringBuilder 消耗的时间为：" + time);
+            Console.WriteLine("StringBuilder 消耗的时间为：" + time);
 
             Console.ReadKey();
 
