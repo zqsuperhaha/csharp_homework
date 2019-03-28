@@ -2,3 +2,4 @@ D:\Githome\csharp_homework\week03\Demo_obj\Demo_obj\bin\Debug\Demo_obj.exe
 D:\Githome\csharp_homework\week03\Demo_obj\Demo_obj\bin\Debug\Demo_obj.pdb
 D:\Githome\csharp_homework\week03\Demo_obj\Demo_obj\obj\x86\Debug\Demo_obj.exe
 D:\Githome\csharp_homework\week03\Demo_obj\Demo_obj\obj\x86\Debug\Demo_obj.pdb
+D:\Githome\csharp_homework\week03\Demo_obj\Demo_obj\obj\x86\Debug\Demo_obj.csprojResolveAssemblyReference.cache
