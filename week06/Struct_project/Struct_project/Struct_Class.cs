@@ -6,7 +6,7 @@ using System.Text;
 namespace Struct_project
 {
 
-    class Program
+    class Struct_Class
     {
         public struct StructStudent
         {
@@ -61,7 +61,7 @@ namespace Struct_project
             StructStudent stu4 = new StructStudent();
             stu4.SayHi(); // Age(int) 默认值为 0 ，Name(string) 默认值为 ""
 
-            Program p = new Program();
+            Struct_Class p = new Struct_Class();
             p.stu3.Age = 50000;
             p.stu3.SayHi();
 
