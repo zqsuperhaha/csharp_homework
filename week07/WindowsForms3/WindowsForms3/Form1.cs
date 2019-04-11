@@ -26,11 +26,6 @@ namespace WindowsForms3
             _Num = r.Next(1,100);          
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void button3_Click(object sender, EventArgs e)  // 显示答案
         {
             textBox2.Text = Convert.ToString(_Num);
@@ -60,6 +55,14 @@ namespace WindowsForms3
         //    if (e.KeyChar == '\r')
         //    {
         //        button2_Click(button2, e);
+        //    }
+        //}
+
+        //private void textBox1_KeyPress(object sender, KeyPressEventArgs e) ----这样不能退出，why???
+        //{
+        //    if (e.KeyChar == 27)
+        //    {
+        //        button4_Click(sender, e);
         //    }
         //}
 
