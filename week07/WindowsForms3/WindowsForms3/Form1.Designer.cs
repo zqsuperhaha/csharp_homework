@@ -157,6 +157,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "猜数字游戏";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
