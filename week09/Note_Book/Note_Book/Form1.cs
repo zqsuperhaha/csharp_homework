@@ -6,16 +6,18 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading;
+using System.IO;
 
 namespace Note_Book
 {
     public partial class Form1 : Form
     {
-
-        internal string _FileName = "";
-        internal string _Texts = "";
-        internal int flag = 1;  // 0--取消--什么都不干  1--不保存或保存，干点什么
-
+        private string _FileName = "";
+        private string _Texts = "";
+        private int flag = 1;  // 0--取消--什么都不干  1--不保存或保存，干点什么
+        private Encoding _FileEncode = Encoding.UTF8;   // 系统默认编码为：UTF8
+        
         //internal MesBox mesbox;
 
         public Form1()  // 界面初始化
@@ -31,6 +33,7 @@ namespace Note_Book
 
             text_row.Text = row + " 行";
             text_col.Text = col + " 列";
+            //Text_EncodeType.Text = _FileEncode.EncodingName;
         }
 
         internal void my_newfile_Click(object sender, EventArgs e) // 新建
@@ -62,11 +65,13 @@ namespace Note_Book
                 if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     // 读取打开文件的数据流
-                    System.IO.StreamReader sr = new System.IO.StreamReader(openFileDialog1.FileName, Encoding.UTF8);
+                    _FileName = openFileDialog1.FileName;
+                    _FileEncode = TextEncodingType.GetType(_FileName);
+                    System.IO.StreamReader sr = new System.IO.StreamReader(_FileName,_FileEncode);
                     textBox1.Text = sr.ReadToEnd();
                     _Texts = textBox1.Text; // 存好当前文本，看看后面有没有改动
                     sr.Close();
-
+                    Text_EncodeType.Text = _FileEncode.EncodingName; // 显示编码种类
                     _FileName = openFileDialog1.FileName;
                     this.Text = _FileName;
                 }
@@ -76,7 +81,7 @@ namespace Note_Book
 
         internal void SaveFile(string fileName)  // 保存--公共
         {
-            System.IO.StreamWriter sw = new System.IO.StreamWriter(fileName);   // 如果覆盖文件，那么文件内容会变，文件名不会变
+            System.IO.StreamWriter sw = new System.IO.StreamWriter(fileName,false,_FileEncode);   // 如果覆盖文件，那么文件内容会变，文件名不会变
             sw.WriteLine(textBox1.Text);
             _Texts = textBox1.Text; // 存好当前文本，看看后面有没有改动
             sw.Flush();
@@ -230,22 +235,25 @@ namespace Note_Book
             MessageBox.Show("你真的需要帮助吗？ZQ记事本用起来可是 so easy 啊~", "帮助", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
+        // 以对话框的形式显示
         private void my_help_zq_Click(object sender, EventArgs e)
         {
-            string date = "今天是："+DateTime.Now.ToLongDateString().ToString();
-            if("2019年4月27日" == date)
-            {
-                date += "\n  祝你生日快乐哦~";
-            }
-            MessageBox.Show(date,"关于ZQ记事本", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            //string date = "今天是："+DateTime.Now.ToLongDateString().ToString();
+            //if("2019年4月27日" == date)
+            //{
+            //    date += "\n  祝你生日快乐哦~";
+            //}
+            //MessageBox.Show(date,"关于ZQ记事本", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+            (new Help_About()).ShowDialog(); // 显示对话框
+            // 可以拆分成:
+            //Help_About ha = new Help_About();
+            //ha.ShowDialog();
+
+            //(new Help_About()).Show(); // 这样写，就会造成 不点确定也没关系，会被其他页面挡住，就会造成可能有多个这种小窗口出现，重重叠叠~
         }
 
 
-
-
-
- 
- 
         //private void my_edit_back_Click(object sender, EventArgs e)
         //{
         //    my_edit_back.Enabled = textBox1.CanUndo;

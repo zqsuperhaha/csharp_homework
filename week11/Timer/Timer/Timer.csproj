@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{ECE8E376-4A40-452B-95D1-6C1B569F55DB}</ProjectGuid>
+    <ProjectGuid>{F56B416C-EDB4-4372-8FA0-3A3B0C09AA94}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Note_Book</RootNamespace>
-    <AssemblyName>Note_Book</AssemblyName>
+    <RootNamespace>Timer</RootNamespace>
+    <AssemblyName>Timer</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -50,23 +50,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Help_About.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Help_About.Designer.cs">
-      <DependentUpon>Help_About.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Menu2.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TextEncodingType.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Help_About.resx">
-      <DependentUpon>Help_About.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -61,6 +61,7 @@
             this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.textBox1 = new System.Windows.Forms.RichTextBox();
+            this.Text_EncodeType = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -71,7 +72,8 @@
             this.toolStripStatusLabel4,
             this.toolStripStatusLabel1,
             this.text_row,
-            this.text_col});
+            this.text_col,
+            this.Text_EncodeType});
             this.statusStrip1.Location = new System.Drawing.Point(0, 524);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(950, 29);
@@ -82,7 +84,7 @@
             // 
             this.toolStripStatusLabel4.AutoSize = false;
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(440, 24);
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(350, 24);
             // 
             // toolStripStatusLabel1
             // 
@@ -94,14 +96,14 @@
             // 
             this.text_row.AutoSize = false;
             this.text_row.Name = "text_row";
-            this.text_row.Size = new System.Drawing.Size(75, 24);
+            this.text_row.Size = new System.Drawing.Size(65, 24);
             this.text_row.Text = "1 行";
             // 
             // text_col
             // 
             this.text_col.AutoSize = false;
             this.text_col.Name = "text_col";
-            this.text_col.Size = new System.Drawing.Size(75, 24);
+            this.text_col.Size = new System.Drawing.Size(70, 24);
             this.text_col.Text = "1 列";
             // 
             // menuStrip1
@@ -323,6 +325,12 @@
             this.textBox1.Text = "";
             this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
             // 
+            // Text_EncodeType
+            // 
+            this.Text_EncodeType.Name = "Text_EncodeType";
+            this.Text_EncodeType.Size = new System.Drawing.Size(150, 24);
+            this.Text_EncodeType.Text = "Unicode (UTF-8)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -380,6 +388,7 @@
         private System.Windows.Forms.ToolStripMenuItem my_help_info;
         private System.Windows.Forms.ToolStripMenuItem my_help_zq;
         private System.Windows.Forms.RichTextBox textBox1;
+        private System.Windows.Forms.ToolStripStatusLabel Text_EncodeType;
     }
 }
 
