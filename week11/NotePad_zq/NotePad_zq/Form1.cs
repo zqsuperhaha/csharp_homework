@@ -65,7 +65,7 @@ namespace NotePad_zq
             }
             else
             {
-                tabControl1.SelectedIndex = index - 1;
+                tabControl1.SelectedIndex = index;
             }
         }
 
